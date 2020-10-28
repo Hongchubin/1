@@ -1,0 +1,100 @@
+c (2,3,5,7,11,13) -2
+-2:2*-2:2
+(1:10)/3
+abs(-9)
+abs(10)
+sqrt(9)
+log(10)
+log10(10)
+log100(10)
+log10(100)
+1.23e5
+identical(2^3,2**3)
+pi
+sin(30)
+sin(1)
+sin(pi/6)
+cos(c(0,pi/4,pi/2,pi))
+round(pi,3)
+floor(pi)
+ceiling(pi)
+trunc(pi)
+factorial(9)
+exp(pi*1i)+1
+factorial(7)+factorial(1)-71^2
+choose(5,0:5)
+c(3,4-1,1+1+1)==3
+1:3 != 3:1
+exp(1:5)>100
+(1:5)^2>=16
+all.equal(sqrt(2)^2,2)
+all.equal(sqrt(2)^2,3)
+isTRUE(all.equal(sqrt(2)^2,3))
+c("A","B","C","D","E")<"C"
+c("a","b","c","d","e")<"C"
+c(Inf-1,Inf+1,Inf-Inf)
+c(1/Inf,Inf/1,Inf/Inf)
+c(sqrt(Inf),sin(Inf))
+c(log(Inf),log(Inf,Inf))
+c(NA+1,NA*5,NA+Inf)
+x1 <-c(0,Inf,-Inf,NaN,NA)
+is.finite(x1)
+is.infinite(x1)
+is.nan(x1)
+is.na(x1)
+x <- 1:10 >=5
+!x
+y <- 1:10%%2 ==0
+y
+x|y
+x&y
+class(sqrt(1:10))
+class(3+1i)
+class(1)
+class(1L)
+class(0.5:4.5)
+class(1:5)
+(gender <- factor(c("male","female","male","female")))
+levels(gender)
+nlevels(gender)
+as.integer(gender)
+gender_char <-sample(c("female","male"),10000,replace=TRUE)
+gender_fac <-as.factor(gender_char)
+object.size(gender_char)
+object.size(gender_fac)
+as.character(gender)
+is.character("red lorry,yellow lorry")
+is.logical(FALSE)
+is.list(list(a=1,b=2))
+is.factor(gender)
+ls(pattern="^is",baseenv())
+is.numeric(1)
+is.numeric(1L)
+is.integer(1)
+is.integer(1L)
+is.double(1)
+is.double(1L)
+z<-c(2,12,112,1112)
+as.data.frame(z)
+a<-c(1:7)
+for(i in a)print(i)
+num <- runif(30)
+summary(num)
+letters
+letters[1:6]
+LETTERS
+fac<- factor(sample(letters[1:5],30,replace=TRUE))
+summary(fac)
+bool<-sample(c(TRUE,FALSE,NA),30,replace=TRUE)
+summary(bool)
+attributes(fac)
+View(fac)
+peach<- 1
+plum<-"fruity"
+pear<-TRUE
+ls()
+ls(pattern="ea")
+ls.str()
+rm(peach,plum,pear)
+rm(list=ls())
+ls()
